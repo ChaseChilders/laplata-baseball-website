@@ -1,0 +1,33 @@
+.navigationContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: navy;
+  padding: 10px;
+}
+
+.logo {
+  color: white;
+  padding-left: 60px;
+}
+
+.logoLaplata {
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.link {
+  padding-right: 60px;
+  color: rgba(255, 255, 255, 0.661);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(69, 168, 250);
+}
