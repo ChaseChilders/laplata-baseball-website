@@ -1,6 +1,6 @@
 import React from "react";
 import "./Stylesheets/Navigation.css";
-import { Roster } from "../routes/Roster";
+import { Statistics } from "../routes/Statistics";
 function NavigationBar() {
   return (
     <div>
@@ -14,6 +14,9 @@ function NavigationBar() {
           </a>
           <a href="/Roster" className="link">
             ROSTER
+          </a>
+          <a href="/Favorites" className="link">
+            FAVORITES
           </a>
           <a href="/Schedule" className="link">
             SCHEDULE
