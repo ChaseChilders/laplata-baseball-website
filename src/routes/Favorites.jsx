@@ -49,16 +49,24 @@ function Favorites() {
         <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles} contentLabel="Example Modal">
           {clickedPlayer && (
             <>
-              <h2>{clickedPlayer.First}</h2>
-              <button onClick={closeModal}>close</button>
-              <div>I am a modal</div>
-              <form>
-                <input />
-                <button>tab navigation</button>
-                <button>stays</button>
-                <button>inside</button>
-                <button>the modal</button>
-              </form>
+              <div className="card">
+                <h1 className="playerNumber">#{clickedPlayer.Number}</h1>
+                <h1 className="playerName">
+                  {clickedPlayer.First} {clickedPlayer.Last}
+                </h1>
+                <h2>PA: {clickedPlayer.PA}</h2>
+                <h2>AVG: {clickedPlayer.AVG}</h2>
+                <h2>SLG: {clickedPlayer.SLG}</h2>
+                <h2>H: {clickedPlayer.H}</h2>
+                <h2>SB: {clickedPlayer.SB}</h2>
+                <h2>IP: {clickedPlayer.IP}</h2>
+                <h2>W: {clickedPlayer.W}</h2>
+                <h2>L: {clickedPlayer.L}</h2>
+                <h2>ERA: {clickedPlayer.ERA}</h2>
+                <button className="button" onClick={closeModal}>
+                  CLOSE
+                </button>
+              </div>
             </>
           )}
         </Modal>
