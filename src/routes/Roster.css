@@ -50,7 +50,7 @@
   align-items: center;
   background-color: navy;
   width: 40px;
-  padding: 20px;
+  padding: 2px;
   color: white;
   border-radius: 50%;
   text-align: center;
@@ -60,9 +60,14 @@
 .playerName {
   font-family: Gantari;
   font-weight: 400;
-  margin-top: 2px;
+  margin-top: 150px;
 }
 
 .button:hover {
   cursor: pointer;
+}
+
+.helmet {
+  height: 200px;
+  margin-bottom: -200px;
 }

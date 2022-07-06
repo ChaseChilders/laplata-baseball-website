@@ -35,13 +35,15 @@ function Favorites() {
           {players.map((player, i) => {
             return (
               <div className="card" key={i}>
-                <h1 className="playerNumber">#{player.Number}</h1>
+                <img className="helmet" src="/pictures/helmet.png" alt="helmet"></img>
+                <h1 className="playerNumber">{player.Number}</h1>
                 <h1 className="playerName">
                   {player.First} {player.Last}
                 </h1>
                 <button className="button" onClick={() => handleClick(player)}>
                   VIEW STATISTICS
                 </button>
+                <button className="button">REMOVE</button>
               </div>
             );
           })}
@@ -49,24 +51,87 @@ function Favorites() {
         <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles} contentLabel="Example Modal">
           {clickedPlayer && (
             <>
-              <div className="card">
-                <h1 className="playerNumber">#{clickedPlayer.Number}</h1>
-                <h1 className="playerName">
+              <thead>
+                <tr>
+                  <th className="text-left">Name</th>
+                  <th className="text-left">GP</th>
+                  <th className="text-left">AB</th>
+                  <th className="text-left">AVG</th>
+                  <th className="text-left">OBP</th>
+                  <th className="text-left">OPS</th>
+                  <th className="text-left">SLG</th>
+                  <th className="text-left">H</th>
+                  <th className="text-left">1B</th>
+                  <th className="text-left">2B</th>
+                  <th className="text-left">3B</th>
+                  <th className="text-left">HR</th>
+                  <th className="text-left">RBI</th>
+                  <th className="text-left">R</th>
+                  <th className="text-left">BB</th>
+                  <th className="text-left">IP</th>
+                  <th className="text-left">W</th>
+                  <th className="text-left">L</th>
+                </tr>
+              </thead>
+              <tr id="tr">
+                <td id="statsTD" className="text-left">
                   {clickedPlayer.First} {clickedPlayer.Last}
-                </h1>
-                <h2>PA: {clickedPlayer.PA}</h2>
-                <h2>AVG: {clickedPlayer.AVG}</h2>
-                <h2>SLG: {clickedPlayer.SLG}</h2>
-                <h2>H: {clickedPlayer.H}</h2>
-                <h2>SB: {clickedPlayer.SB}</h2>
-                <h2>IP: {clickedPlayer.IP}</h2>
-                <h2>W: {clickedPlayer.W}</h2>
-                <h2>L: {clickedPlayer.L}</h2>
-                <h2>ERA: {clickedPlayer.ERA}</h2>
-                <button className="button" onClick={closeModal}>
-                  CLOSE
-                </button>
-              </div>
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.GP}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.AB}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.AVG}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.OBP}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.OPS}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.SLG}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.H}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer["1B"]}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer["2B"]}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer["3B"]}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.HR}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.RBI}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.R}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.BB}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.IP}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.W}
+                </td>
+                <td id="statsTD" className="text-left">
+                  {clickedPlayer.L}
+                </td>
+              </tr>
+              <button className="button" onClick={closeModal}>
+                CLOSE
+              </button>
             </>
           )}
         </Modal>

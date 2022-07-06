@@ -1,3 +1,8 @@
+.appContainer {
+  background-image: url(/public/pictures/background.png);
+  background-size: auto;
+}
+
 .App {
   display: block;
   width: 1200px;

@@ -19,7 +19,8 @@ function Roster() {
         {players.map((player, i) => {
           return (
             <div className="card" key={i}>
-              <h1 className="playerNumber">#{player.Number}</h1>
+              <img className="helmet" src="/pictures/helmet.png" alt="helmet"></img>
+              <h1 className="playerNumber">{player.Number}</h1>
               <h1 className="playerName">
                 {player.First} {player.Last}
               </h1>

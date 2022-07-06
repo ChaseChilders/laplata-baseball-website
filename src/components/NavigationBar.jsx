@@ -6,7 +6,10 @@ function NavigationBar() {
     <div>
       <div className="navigationContainer">
         <div className="logo">
-          <h1 className="logoLaplata">LA PLATA HIGH SCHOOL BASEBALL</h1>
+          <img className="logoimage" src="/pictures/hustle2.png" alt="logo"></img>
+        </div>
+        <div>
+          <img className="knightlogo" src="/pictures/knightlogo.png" alt="logo"></img>
         </div>
         <div className="links">
           <a href="/Home" className="link">

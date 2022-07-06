@@ -11,7 +11,7 @@ div.table-title {
   padding: 10px;
   color: navy;
   letter-spacing: 5px;
-  background-color: rgba(128, 128, 128, 0.662);
+  background-color: rgba(128, 128, 128, 0.968);
   text-align: center;
 }
 
@@ -26,7 +26,6 @@ div.table-title {
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   animation: float 5s infinite;
-  margin-bottom: 40px;
 }
 
 th {
@@ -94,7 +93,7 @@ tr:last-child td:last-child {
   padding: 20px;
   text-align: center;
   vertical-align: middle;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
   border-right: 1px solid #c1c3d1;
