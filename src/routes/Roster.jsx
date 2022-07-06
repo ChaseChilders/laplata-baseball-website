@@ -11,7 +11,7 @@ function Roster() {
     dispatch(addPlayer(player));
   };
   return (
-    <div>
+    <div className="cardDiv">
       <div>
         <div className="table-title">ROSTER</div>
       </div>

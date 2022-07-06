@@ -5,7 +5,7 @@ import players from "../components/Data";
 export function Statistics() {
   return (
     <div className="table">
-      <div className="table-title">STATISTICS</div>
+      <div className="table-title">2022 STATISTICS</div>
       <table className="table-fill">
         <thead>
           <tr>

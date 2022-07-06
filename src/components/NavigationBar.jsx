@@ -12,7 +12,7 @@ function NavigationBar() {
           <img className="knightlogo" src="/pictures/knightlogo.png" alt="logo"></img>
         </div>
         <div className="links">
-          <a href="/Home" className="link">
+          <a href="/" className="link">
             HOME
           </a>
           <a href="/Roster" className="link">

@@ -5,7 +5,7 @@ function Schedule() {
   return (
     <div>
       <div className="table">
-        <div className="table-title">SCHEDULE</div>
+        <div className="table-title">2022 SCHEDULE</div>
         <table className="table-fill">
           <thead>
             <tr id="tr">

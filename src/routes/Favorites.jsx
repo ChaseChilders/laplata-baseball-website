@@ -26,7 +26,7 @@ function Favorites() {
     setIsOpen(true);
   }
   return (
-    <div>
+    <div className="cardDiv">
       <div>
         <div>
           <div className="table-title">FAVORITES</div>
