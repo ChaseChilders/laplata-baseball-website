@@ -1,8 +1,6 @@
-import logo from "./logo.svg";
 import NavigationBar from "./components/NavigationBar";
 import "./App.css";
-import { EditableTable } from "./routes/Statistics";
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Schedule from "./routes/Schedule";
 import { Statistics } from "./routes/Statistics";
 import Home from "./routes/Home";

@@ -1,8 +1,7 @@
 import React from "react";
 import players from "../components/Data";
 import "./Roster.css";
-import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addPlayer } from "../redux/actions";
 
 function Roster() {

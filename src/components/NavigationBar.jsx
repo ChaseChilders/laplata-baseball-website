@@ -1,6 +1,5 @@
 import React from "react";
 import "./Stylesheets/Navigation.css";
-import { Statistics } from "../routes/Statistics";
 function NavigationBar() {
   return (
     <div>
