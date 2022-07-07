@@ -6,10 +6,14 @@ function NavigationBar() {
     <div>
       <div className="navigationContainer">
         <div className="logo">
-          <img className="logoimage" src="/pictures/hustle2.png" alt="logo"></img>
+          <a href="/">
+            <img className="logoimage" src="/pictures/hustle2.png" alt="logo"></img>
+          </a>
         </div>
         <div>
-          <img className="knightlogo" src="/pictures/knightlogo.png" alt="logo"></img>
+          <a href="/">
+            <img className="knightlogo" src="/pictures/knightlogo.png" alt="logo"></img>
+          </a>
         </div>
         <div className="links">
           <a href="/" className="link">

@@ -41,3 +41,13 @@
 .logoimage {
   height: 115px;
 }
+
+@media only screen and (max-width: 600px) {
+  .navigationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 600px;
+    align-items: center;
+  }
+}

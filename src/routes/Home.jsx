@@ -21,7 +21,7 @@ import {
 
 function HomeCarousel() {
   return (
-    <div>
+    <div className="homeCarousel">
       <div className="home-title">HOME</div>
       <div className="carouselDiv">
         <Swiper
@@ -38,7 +38,7 @@ function HomeCarousel() {
             <img className="carouselImage" src="/pictures/homerun.jpg" alt="hugging kids"></img>
           </SwiperSlide>
           <SwiperSlide>
-            <img className="carouselImage" src="/pictures/standing.jpeg" alt="hugging kids"></img>
+            <img className="carouselImage" src="/pictures/ryancalvert.jpg" alt="hugging kids"></img>
           </SwiperSlide>
           <SwiperSlide>
             <img className="carouselImage" src="/pictures/holdingtrophy.jpg" alt="hugging kids"></img>
@@ -58,7 +58,7 @@ function HomeCarousel() {
                 target="blank"
                 href="https://www.washingtonpost.com/sports/2022/06/21/2022-spring-all-met-baseball-first-team-second-team-honorable-mention/"
               >
-                Bowling recieves All-Met Honorable Mention honors
+                Bowling receives All-Met Honorable Mention honors
               </a>
               <a
                 className="bullets"

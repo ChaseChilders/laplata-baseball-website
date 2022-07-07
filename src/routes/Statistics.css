@@ -126,3 +126,24 @@ td.text-center {
 td.text-right {
   text-align: right;
 }
+
+@media only screen and (max-width: 600px) {
+  .table {
+    font-size: 3px;
+    width: 50%;
+  }
+  th {
+    font-size: 10px;
+  }
+  tr {
+    font-size: 10px;
+    width: 50%;
+  }
+  #statsTD {
+    font-size: 10px;
+    width: 50%;
+  }
+  .table-fill {
+    width: 50%;
+  }
+}

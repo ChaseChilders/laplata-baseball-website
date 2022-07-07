@@ -75,3 +75,31 @@
 .cardDiv {
   padding-bottom: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+  .cardContainer {
+    flex-direction: column;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+  }
+  .stateChampionships {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .stateChampionshipHeading {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .table-title {
+    width: 580px;
+  }
+  .cardDiv {
+    width: 600px;
+  }
+}

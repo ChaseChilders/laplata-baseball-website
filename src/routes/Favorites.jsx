@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 import Modal from "react-modal";
+import "./Favorites.css";
 
 function Favorites() {
   const customStyles = {
@@ -43,14 +44,13 @@ function Favorites() {
                 <button className="button" onClick={() => handleClick(player)}>
                   VIEW STATISTICS
                 </button>
-                <button className="button">REMOVE</button>
               </div>
             );
           })}
         </div>
         <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={customStyles} contentLabel="Example Modal">
           {clickedPlayer && (
-            <>
+            <div className="statsDiv">
               <thead>
                 <tr>
                   <th className="text-left">Name</th>
@@ -132,7 +132,7 @@ function Favorites() {
               <button className="button" onClick={closeModal}>
                 CLOSE
               </button>
-            </>
+            </div>
           )}
         </Modal>
       </div>
