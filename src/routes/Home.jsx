@@ -84,7 +84,7 @@ function HomeCarousel() {
             </div>
           </div>
           <div className="walkoff">
-            <blockquote class="twitter-tweet">
+            <blockquote className="twitter-tweet">
               <p lang="en" dir="ltr">
                 🚨 WALK OFF WINNER‼️ <br></br>2022 C Chet Bowling singles back up the middle to score two runs as{" "}
                 <a href="https://twitter.com/LaPlataBaseball?ref_src=twsrc%5Etfw">@LaPlataBaseball</a> storms back to win the 2021 MPSSAA 2A State
